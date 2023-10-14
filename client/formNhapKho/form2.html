@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style2.css" />
+    <title>Dùng để nhập dữ liệu</title>
+  </head>
+  <body>
+    <div class="wrapera4">
+      <header>
+        <div class="leftHead">
+          <div class="donVi">
+            Đơn vị: <input type="text" placeholder="..............." />
+          </div>
+          <div class="boPhan">
+            Bộ phận:<input type="text" placeholder="..............." />
+          </div>
+        </div>
+        <div class="rightHead">
+          <h1>Mẫu số 1 - VT</h1>
+          <p>
+            (Ban hành theo thôn tư số 200/2014 TT-BTC Ngày 21/12/2014 của bộ tài
+            chính)
+          </p>
+        </div>
+      </header>
+      <div class="container">
+        <div class="titlewrap">
+          <h1>PHIẾU NHẬP KHO</h1>
+          <div class="date">Ngày <input type="date" value="" /></div>
+          <div class="">
+            Số: <input type="text" placeholder="..............." />
+          </div>
+          <div class="wrapMore">
+            <div>Nợ: <input type="text" placeholder="..............." /></div>
+            <div>Có: <input type="text" placeholder="..............." /></div>
+          </div>
+        </div>
+        <div class="main">
+          <div class="information">
+            <div class="deliver">
+              -Họ tên người giao:
+              <input type="text" placeholder="..............." />
+            </div>
+            <div class="">
+              -Theo:<input type="text" placeholder="..............." /> Ngày:
+              <input type="text" placeholder="..............." />Của:
+              <input type="text" placeholder="..............." />
+            </div>
+            <div class="">
+              Nhập tại kho:
+              <input type="text" placeholder="..............." /> Địa điểm:
+              <input type="text" placeholder="..............." />
+            </div>
+          </div>
+
+          <table id="table" border="1">
+            <tr>
+              <th rowspan="2">Số thứ tự</th>
+              <th rowspan="2">
+                Tên nhãn hiệu, quy cách, phẩn chất vật tư, dụng cụ sản phẩm,
+                hàng hóa
+              </th>
+              <th rowspan="2">Mã số</th>
+              <th rowspan="2">Đơn vị tính</th>
+              <th colspan="2">Số lượng</th>
+              <th rowspan="2">Đơn giá</th>
+              <th rowspan="2">Thành tiền</th>
+            </tr>
+            <tr>
+              <th>Theo chứng từ</th>
+              <th>Thực nhập</th>
+            </tr>
+            <tr>
+              <th>A</th>
+              <th>B</th>
+              <th>C</th>
+              <th>D</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td><textarea name="" id="" cols="30" rows="2"></textarea></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+              <td><input type="text" /></td>
+            </tr>
+            <tr>
+              <td>Cộng(Tạm tính)</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="tongTien">
+          -Tổng số tiền(tính bằng <br />
+          chữ):
+          <input type="text" placeholder="..............." />
+        </div>
+        <div class="soChungTuGoc">
+          -Số chứng từ gốc kèm <br />
+          theo:
+          <input type="text" placeholder="..............." />
+        </div>
+      </div>
+
+      <footer>
+        <div class="nguoiLap">Người lập phiếu</div>
+        <div class="ky1">(Ký, họ tên)</div>
+        <div class="nguoiGiao">Người giao hàng</div>
+        <div class="ky2">(Ký, họ tên)</div>
+        <div class="thuKho">Thủ kho</div>
+        <div class="ky3">(Ký, họ tên)</div>
+        <div class="ngayThangNam">
+          Ngày.........tháng.........năm...............
+        </div>
+        <div class="keToanTruong">
+          Kế toán trưởng (Hoặc bộ phận có yêu cầu nhập)
+        </div>
+        <div class="ky4">(Ký, họ tên)</div>
+      </footer>
+    </div>
+    <script>
+      const today = new Date();
+      const year = today.getFullYear();
+      const month = String(today.getMonth() + 1).padStart(2, "0");
+      const day = String(today.getDate()).padStart(2, "0");
+      const currentDate = `${year}-${month}-${day}`;
+      document.getElementById("myDate").value = currentDate;
+    </script>
+    <script src="./form2.js"></script>
+  </body>
+</html>

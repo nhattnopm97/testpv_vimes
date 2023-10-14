@@ -1,0 +1,48 @@
+table {
+    border-collapse: collapse;
+}
+
+th {
+    height: 75px;
+}
+
+textarea {
+    width: 97%;
+    height: 100%;
+    border: none;
+    resize: none;
+    text-align: center;
+    padding: 10px 2px;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.add {
+    background-color: rgb(60, 132, 60);
+}
+
+.add:hover {
+    background-color: rgb(0, 255, 0);
+
+}
+
+.delete {
+    background-color: rgb(135, 40, 40);
+}
+
+.delete:hover {
+    background-color: red;
+}
+
+.submit {
+    background-color: chartreuse;
+}
+
+.submit:hover {
+    background-color: rgb(57, 110, 3);
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Nhập dữ liệu</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="title">Phiếu nhập kho</div>
+      </div>
+      <label for=""
+        >Ngày giao hàng: <input id="delivery_time" type="date" /></label
+      ><br />
+      <label for="">Đơn vị</label>
+      <input type="text" placeholder="Nhập đơn vị" />
+      <label for="">Bộ phận</label>
+      <input type="text" placeholder="Nhập bộ phận" />
+      <label for=""></label>
+
+      <div class="inforDeliver">
+        <label for="">-Họ tên người giao</label>
+        <input id="deliver" type="text" /> <br />
+        <label for="">Nhập tại kho.</label>
+        <input id="warehouse_name" type="text" />
+        <label for="">Địa điểm</label>
+        <input id="address" type="text" /> <br />
+      </div>
+
+      <div class="products">
+        <table id="table" border="1">
+          <tr>
+            <th rowspan="2">Số thứ tự</th>
+            <th rowspan="2">
+              Tên nhãn hiệu, quy cách, phẩn chất vật tư, dụng cụ sản phẩm, hàng
+              hóa
+            </th>
+            <th rowspan="2">Mã số</th>
+            <th rowspan="2">Đơn vị tính</th>
+            <th colspan="2">Số lượng</th>
+            <th rowspan="2">Đơn giá</th>
+            <th rowspan="2">Thành tiền</th>
+            <th rowspan="2">Chức năng</th>
+          </tr>
+          <tr>
+            <th>Theo chứng từ</th>
+            <th>Thực nhập</th>
+          </tr>
+          <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+          </tr>
+          <tr>
+            <td style="text-align: center">1</td>
+            <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
+            <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
+            <td>
+              <select name="" id="">
+                <option value=""></option>
+                <option value="Viê">Viên</option>
+                <option value="Vỉ">Vỉ</option>
+                <option value="Lọ">Lọ</option>
+                <option value="Thùng">Thùng</option>
+                <option value="Xe">Xe</option>
+              </select>
+            </td>
+            <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
+            <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
+            <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
+            <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
+            <td>
+              <button class="add">Thêm</button
+              ><button class="delete">Xóa</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Cộng(Tạm tính)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+
+      <button onclick="submitForm()" class="submit">
+        Nhập vào kho theo đơn
+      </button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
